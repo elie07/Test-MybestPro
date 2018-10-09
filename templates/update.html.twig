@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} - New{% endblock %}
+
+{% block body %}
+    <div class="text-center taches">
+	<h2>Update tache</h2>
+	{{ form_start(form) }}
+	{{ form_widget(form) }}
+	{{ form_end(form) }}
+	</div>
+
+	<div class="bouton">
+		<a href="/"><button>Liste des taches</button></a>
+	</div>
+
+{% endblock %}

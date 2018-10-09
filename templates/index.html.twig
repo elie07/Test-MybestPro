@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Taches.com{% endblock %}
+{% block body %}
+
+<form action="/" method="GET" class="text-center">
+	<select name="sort">
+		<option value="created">Date</option>
+			<option value="status">Status</option>
+		<option value="titre">Titre</option>
+	</select>
+	<input type="submit" value="Trier">
+</form>
+<div class="text-center">	
+	<a href="/new"><button>Nouvelle tache</button></a>
+</div>
+{% for listetache in Listetaches %}
+			<div class="contenair text-center taches">
+				<div class="row">
+					<h3>{{ listetache.titre }}</h3>
+			        <h4>{{ listetache.description }}</h4>
+
+					{% if listetache.status == 0 %}
+					<p>A faire</p>
+					{% elseif listetache.status == 1 %}
+					<p>En cours</p>
+					{% elseif listetache.status == 2 %}
+					<p>Terminée</p>
+					{% endif %}
+
+					<p>{{ listetache.created|date("m/d/Y") }}</p>
+					<a href="/update/{{ listetache.id }}"><button>Edit</button></a>
+					<a href="/delete/{{ listetache.id }}" onclick="return confirm('Message')"><button>Delete</button></a>
+
+				</div>
+			</div>
+{% endfor %}
+</div>
+{% endblock %}

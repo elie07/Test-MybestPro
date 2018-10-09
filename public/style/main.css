@@ -1,0 +1,38 @@
+html, body {
+	position: relative;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+.taches{
+	border:1px solid black;
+	margin:0 auto;
+	width: 35%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+}
+
+label
+{
+
+	display: block;
+
+}
+
+.bouton{
+	margin-top: 25px!important;
+	text-align: center;
+}
+
+
+

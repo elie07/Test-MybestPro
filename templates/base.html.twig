@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{% block title %}Welcome!{% endblock %}</title>
+{% block stylesheets %}{% endblock %}
+</head>
+<body>
+<div class="container">
+<div class="jumbotron" style="background-color:#34495e !important">
+<h1 class="text-center" style="color:white">Taches MyBestPro</h1>
+</div> 
+</div>
+
+{% block body %} {% endblock %}
+{% block javascripts %}{% endblock %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/style/main.css">
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
