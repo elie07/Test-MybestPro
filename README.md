@@ -6,3 +6,7 @@ Test technique <br/>
 `cd Test-MybestPro`<br/><br/>
 `composer install`<br/><br/>
 `php bin/console server:run`<br/><br/>
+modfier le fichier .env (DATABASE_URL) avec les identifiants de connexion MYSQL</br></br>
+`php bin/console doctrine:database:create`</br></br>
+`php bin/console doctrine:make:migration`</br></br>
+
