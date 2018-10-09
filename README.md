@@ -1,10 +1,8 @@
 # Test-MybestPro
-Test technique
+Test technique <br/>
 
 
-`git clone https://github.com/elie07/Test-MybestPro.git`
-`cd Test-MybestPro`
-`composer install`
-`php bin/console server:run`
-
-
+`git clone https://github.com/elie07/Test-MybestPro.git`<br/><br/>
+`cd Test-MybestPro`<br/><br/>
+`composer install`<br/><br/>
+`php bin/console server:run`<br/><br/>
